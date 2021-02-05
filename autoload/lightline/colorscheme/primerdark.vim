@@ -30,12 +30,12 @@ let s:black = [ s:colors.black.gui, s:term_black ]
 let s:grey = [ s:colors.visual_grey.gui, s:term_grey ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:black, s:green ], [ s:white, s:grey ] ]
-let s:p.normal.right = [ [ s:black, s:green ], [ s:white, s:grey ] ]
+let s:p.normal.left = [ [ s:black, s:red ], [ s:white, s:grey ] ]
+let s:p.normal.right = [ [ s:black, s:red ], [ s:white, s:grey ] ]
 let s:p.inactive.left =  [ [ s:white, s:grey ], [ s:white, s:grey ] ]
 let s:p.inactive.right = [ [ s:black, s:white ], [ s:black, s:white ] ]
-let s:p.insert.left = [ [ s:black, s:blue ], [ s:white, s:grey ] ]
-let s:p.insert.right = [ [ s:black, s:blue ], [ s:white, s:grey ] ]
+let s:p.insert.left = [ [ s:black, s:green ], [ s:white, s:grey ] ]
+let s:p.insert.right = [ [ s:black, s:green ], [ s:white, s:grey ] ]
 let s:p.replace.left = [ [ s:black, s:red ], [ s:white, s:grey ] ]
 let s:p.replace.right = [ [ s:black, s:red ], [ s:white, s:grey ] ]
 let s:p.visual.left = [ [ s:black, s:purple ], [ s:white, s:grey ] ]
@@ -50,4 +50,3 @@ let s:p.normal.error = [ [ s:black, s:red ] ]
 let s:p.normal.warning = [ [ s:black, s:yellow ] ]
 
 let g:lightline#colorscheme#primerdark#palette = lightline#colorscheme#flatten(s:p)
-
